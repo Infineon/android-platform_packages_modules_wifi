@@ -28,10 +28,10 @@
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
          is no longer indicative, and a separate config now exists for each band -->
-    <bool translatable="false" name ="config_wifi5ghzSupport">false</bool>
+    <bool translatable="false" name ="config_wifi5ghzSupport">true</bool>
 
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool translatable="false" name ="config_wifi6ghzSupport">false</bool>
+    <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
 
     <!-- boolean indicating whether the WiFi chipset has 60GHz band support -->
     <bool translatable="false" name ="config_wifi60ghzSupport">false</bool>
@@ -40,7 +40,7 @@
            Note that if this flag is set to true, then 11ax is assumed to be supported.
            However, if it is left to the default value of false, the 11ax support will
            be checked via NL80211 interface -->
-    <bool translatable="false" name="config_wifi11axSupportOverride">false</bool>
+    <bool translatable="false" name="config_wifi11axSupportOverride">true</bool>
 
     <!-- Indicates that 11be mode is supported on this device
            Note that if this flag is set to true, then 11be is assumed to be supported.
@@ -66,7 +66,7 @@
          This mechanism allows the host to remain in suspend state and the dongle to actively
          scan and wake the host when a configured SSID is detected by the dongle. This chipset
          capability can provide power savings when wifi needs to be always kept on. -->
-    <bool translatable="false" name="config_wifi_background_scan_support">false</bool>
+    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
     <!-- Boolean indicating whether or not to revert to default country code when cellular
          radio is unable to find any MCC information to infer wifi country code from -->
@@ -174,7 +174,7 @@
     <bool translatable="false" name ="config_wifiFrameworkSoftApDisableBridgedModeShutdownIdleInstanceWhenCharging">false</bool>
 
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
-    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">16</integer>
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">8</integer>
 
     <!-- boolean indicating whether or not to reset channel configuration during cloud configuration restore -->
     <bool translatable="false" name ="config_wifiSoftapResetChannelConfig">true</bool>
@@ -281,13 +281,13 @@
     <bool translatable="false" name="config_wifi_softap_acs_supported">false</bool>
 
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
-    <bool translatable="false" name="config_wifi_softap_sae_supported">false</bool>
+    <bool translatable="false" name="config_wifi_softap_sae_supported">true</bool>
 
     <!-- Wifi driver supports Mac address customization for softap -->
     <bool translatable="false" name="config_wifiSoftapMacAddressCustomizationSupported">true</bool>
 
     <!-- Wifi driver supports IEEE80211AC for softap -->
-    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">false</bool>
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
     <!-- Wifi driver supports IEEE80211AX for softap -->
     <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">false</bool>
@@ -314,7 +314,7 @@
     <bool translatable="false" name="config_wifiSoftap5ghzSupported">true</bool>
 
     <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool translatable="false" name="config_wifiSoftap6ghzSupported">false</bool>
+    <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
 
     <!-- Wifi driver supports 60GHz band for softap when chip support 60GHz -->
     <bool translatable="false" name="config_wifiSoftap60ghzSupported">false</bool>
@@ -332,21 +332,21 @@
     <!-- Indicates that local-only hotspot should be brought up at 5GHz if 6GHz is not enabled
          or feasible.  This option is for automotive builds only (the one that have
          PackageManager#FEATURE_AUTOMOTIVE) -->
-    <bool translatable="false" name="config_wifi_local_only_hotspot_5ghz">false</bool>
+    <bool translatable="false" name="config_wifi_local_only_hotspot_5ghz">true</bool>
 
     <!-- Set to "true" to always use the factory MAC saved in WifiConfigStore when available.
          Set to "false" to get the factory MAC from vendor HAL every time it's needed. -->
     <bool translatable="false" name="config_wifiSaveFactoryMacToWifiConfigStore">true</bool>
 
     <!-- Indicates that connected MAC randomization is supported on this device -->
-    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">false</bool>
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- Indicates that non-persistent MAC randomization is allowed on open networks that do not
      use captive portals -->
     <bool translatable="false" name="config_wifiAllowNonPersistentMacRandomizationOnOpenSsids">false</bool>
 
     <!-- Indicates that p2p MAC randomization is supported on this device -->
-    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">false</bool>
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
 
     <!-- Indicates that AP mode MAC randomization is supported on this device -->
     <bool translatable="false" name="config_wifi_ap_mac_randomization_supported">true</bool>
@@ -660,7 +660,7 @@
     <bool translatable="false" name="config_wifiSaeUpgradeEnabled">true</bool>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
-    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">false</bool>
+    <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">true</bool>
 
     <!-- Enable Open to OWE auto-upgrade -->
     <bool translatable="false" name="config_wifiOweUpgradeEnabled">true</bool>
@@ -759,7 +759,7 @@
     <bool translatable="false" name="config_wifiUseHalApiToDisableFwRoaming">false</bool>
 
     <!-- Indicates that SAE Hash-to-Element is supported on this device -->
-    <bool translatable="false" name="config_wifiSaeH2eSupported">false</bool>
+    <bool translatable="false" name="config_wifiSaeH2eSupported">true</bool>
 
     <!-- Enable aggregation of Wifi link layer radio stats from all radios.
          Defaults to false will fetch radio stats only from Radio 0. This is to avoid
