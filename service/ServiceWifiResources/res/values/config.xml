@@ -657,7 +657,7 @@
     <integer translatable="false" name="config_wifiChannelUtilizationOverride6g">10</integer>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade -->
-    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
+    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">true</bool>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade offload to capable Driver/Firmware -->
     <bool translatable="false" name="config_wifiSaeUpgradeOffloadEnabled">false</bool>
